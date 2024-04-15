@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE 110 Lab 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1>Out of the Box! <em>Team Meeting Minutes</em></h1>
+      <h3>Check-in, Brainstorming</h3>
+      <span>Date: 4/15/2024</span>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#meeting-section">Meeting Section</a></li>
+        <li><a href="#attendance">Attendance</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#unfinished_business">Unfinished Business</a></li>
+        <li><a href="#notes">Notes</a></li>
+        <li><a href="#recordings">Recordings</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <section id="attendance">
+          <h2>Attendance</h2>
+          <p>Jamaica Jamama, Silly Sally, Bobby Bo Branson</p>
+        </section>
+
+        <section id="agenda">
+          <h2>Agenda</h2>
+
+          <ol>
+            <li>Check ins --- <i>how are you doing today?</i></li>
+            <li>Review last meeting</li>
+            <li>Brainstorm ideas for next <strong>Out of the Box! Open Mic</strong></li>
+          </ol>
+        </section>
+
+        <section id="unfinished_business">
+          <details>
+            <summary>Unfinished ~ Last Meeting<h2></h2></summary>
+            <span>Need to come up with new name/branding</span>
+          </details>
+        </section>
+
+        <section>
+          <img src="ootb.png" />
+        </section>
+
+        <section id="notes">
+          <h2>Today's Notes</h2>
+          <ul>
+            <li>What went well last time --- good turnout, good marketing strats, good amount of prep time</li>
+            <li>What could be improve: make sure performers check music, clean transitions, get volunteers early</li>
+          </ul>
+
+          <div>
+            <h3>Future Sign Up Form Sample</h3>
+            <form>
+              <fieldset>
+                <legend>Performer Sign Up Form</legend>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <label for="description">Piece Description:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+                
+                <datalist id="genre">
+                  <option value="Contemporary"></option>
+                  <option value="Hip Hop"></option>
+                  <option value="Indie"></option>
+                  <option value="Ballet/Lyrical"></option>
+                  <option value="Other"></option>
+                </datalist>
+                
+                <label for="needMusic">Do you need music?</label>
+                <input type="checkbox" id="needMusic" name="needMusic" value="needMusic"><br><br>
+                
+                <label for="preferredDate">Preferred Performance date:</label>
+                <input type="date" id="preferredDate" name="preferredDate"><br><br>
+                
+                <label for="type">Type of Performance:</label>
+                <select id="type" name="type">
+                  <option value="playing musical instrument">playing musical instrument</option>
+                  <option value="dance piece with music">dance piece with music</option>
+                  <option value="dance piece in silence">dance piece in silence</option>
+                  <option value="spoken poetry">spoken poetry</option>
+                </select><br>
+
+                <p>Number of People in Piece</p>
+                <input type="radio" id="solo" name="numPeople" value="solo">
+                <label for="solo">solo</label><br />
+
+                <input type="radio" id="duet" name="numPeople" value="duet">
+                <label for="duet">duet</label><br />
+
+                <input type="radio" id="group" name="numPeople" value="group">
+                <label for="group">group</label><br />
+
+                <br />
+
+                <label for="agreement">Agree to terms:</label>
+                
+                <input type="checkbox" id="agreement" name="agreement" required><br><br>
+                <button type="submit">Submit</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+
+        <section id="recordings">
+          <h2>Original Footage</h2>
+          <div>
+            <p>Audio for Solo: </p>
+            <audio controls><source src="She Speaks Mix.mp3" type="audio/mpeg"></audio>
+            
+            <p>Solo Video Example:</p>
+            <video controls><source src="mila solo.mp4" type="video/mp4"></video>
+          </div>
+        </section>
+
+        <hr />
+    </main>
+
+    <footer>
+      Trademarked by official <b>MM Meeting Notes LLC</b>
+    </footer>
+
+  </body>
+</html>
