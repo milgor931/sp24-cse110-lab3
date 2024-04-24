@@ -1,0 +1,127 @@
+/* CSS topics and selectors file */
+
+:root {
+    --primary-color: magenta; /* Define the CSS variable with a default value */
+  }
+
+*  {
+    color: color-mix(blend, black, white);
+}
+
+a[href="#notes"] {
+    font-size: 1.5em;
+}
+
+ul, ol {
+    border-style: solid;
+    border-color: rgb(1, 20, 20);
+    border-width: 2px;
+    border-radius: 20px;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal-width columns */
+    grid-gap: 10px; /* Add gap between grid items */
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+body {
+    background-color: turquoise;
+    padding: 50px 50px 50px 50px;
+}
+
+#header {
+    color: hsl(200, 100%, 50%);
+    position: static;
+}
+
+footer {
+    background-color: darkblue;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 5rem;
+    color: white;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+
+.navItem {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.navItem {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    :hover {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  }
+
+.navItem a {
+    color: #FFFFFF;
+    margin: auto;
+}
+
+section > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 + p {
+    color: var(--primary-color, blue);
+}
+
+h2 ~ ol {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section:has(+ form) {
+    margin-bottom: 0;
+  }
+
+summary.summaryText {
+    color: rgb(255, 255, 0);
+}
+
+header em {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    color: color(display-p3 0.7 0.2 0.1 / 0.8); 
+}
+
+img {
+    max-width: 50%;
+    max-height: 1in;
+}
+
+img:active {
+    width: 100vw;
+    height: 5cm;
+}
+
+@media screen and (max-width: 500px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+.fancyFont1 {
+    font-family: "Jacquard 24", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
