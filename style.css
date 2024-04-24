@@ -5,7 +5,7 @@
   }
 
 *  {
-    color: color-mix(blend, black, white);
+    color: color-mix(in hsl longer hue, hsl(120 100% 50%) 20%, white);
 }
 
 a[href="#notes"] {
@@ -99,7 +99,7 @@ header em {
 }
 
 a:hover {
-    color: color(display-p3 0.7 0.2 0.1 / 0.8); 
+    color: color(display-p3 1 0.5 0 / .5); 
 }
 
 img {
